@@ -1,0 +1,20 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+              android:orientation="vertical"
+             tools:context="com.nextsofts.fragmentos.FragmentC">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hola soy el fragmento integrado por codigo y no por layout"/>
+    <Button
+            android:layout_width="match_parent"
+            android:id="@+id/btnC"
+            android:text="Atras"
+            android:onClick="atras"
+            android:layout_height="wrap_content"/>
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:id="@+id/contenedor"
+        tools:context="com.nextsofts.fragmentos.MainActivity">
+    <Button
+            android:id="@+id/add_fragment"
+            android:text="BOTON PRUEBA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    <!--esto es una actividad con dos fragmentos integrados un fragmento es parte de una actividad son sus hijos-->
+    <fragment
+            android:id="@+id/frag1"
+            android:name="com.nextsofts.fragmentos.FragmentA"
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout="@layout/fragment_a">
+    </fragment>
+    <fragment
+            android:id="@+id/frag2"
+            android:name="com.nextsofts.fragmentos.FragmentB"
+            android:layout_width="match_parent"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            tools:layout="@layout/fragment_b">
+
+    </fragment>
+
+</LinearLayout>
